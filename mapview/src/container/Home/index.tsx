@@ -1,4 +1,5 @@
 import React from 'react'
+import Map from '../../components/Map'
 //import Map from '../../components/Map/index'
 import {Container, Aside, StyledApp, Header} from './style'
 
@@ -11,7 +12,7 @@ export default function Home(){
             <div> Control Panel </div>
         </Aside>
         <StyledApp>
-            <div> Map </div>
+            <Map/>
             
             <p>Display</p>
             </StyledApp>
