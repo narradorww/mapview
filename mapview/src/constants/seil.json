@@ -1,0 +1,26 @@
+{
+    "features": [
+      {
+        "geometry": {
+          "coordinates": [
+            [
+              8.4950108, 
+              11.8209359
+            ] 
+            
+           ], 
+          "type": "LineString"
+        }, 
+        "properties": {
+          "color": "#fa0500", 
+          "info": {
+            "diameter": 0.0, 
+            "length": 15530.85
+          }, 
+          "parent_uuid": "8cf4a627-dc95-47d7-bfa7-78807757a42d", 
+          "uuid": "a6d7930b-2707-4cc5-aaa6-445f1d293992"
+        }, 
+        "type": "Feature"
+      }
+    ]
+}
