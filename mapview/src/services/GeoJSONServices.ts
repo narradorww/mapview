@@ -1,13 +1,10 @@
-import { IGeoJson } from '../interfaces';
-import { Api } from './../providers/index';
+import { GeoJsonObject } from "geojson";
+
+import { Api } from "./../providers/index";
+
+const getAll = () => Api.get<GeoJsonObject>('/mapview');
 
 
-
-const getAll =()=> Api.get('/mapview')
-
-
-
-
-export const GeoJSONServices ={
-    getAll,
-}
+export const GeoJSONServices = {
+  getAll,
+};

@@ -3,15 +3,19 @@ import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import "../Map/style.css";
 import "leaflet/dist/leaflet.css";
 import osm from "../../constants/osm-provider";
-import { useGEoJSON } from "../../hooks/useGeoJSON";
+import { useGeoJSON } from "../../hooks/useGeoJSON";
 import geo from "../../constants/geoJSON.json";
-import L from 'leaflet'
+
 
 export default function Map() {
   const [center, setCenter] = useState({ lat: 12.041833166, lng: 8.521331248 });
-  const { getAll, geoJson } = useGEoJSON();
+  const { getAll, geoJson } = useGeoJSON();
 
-  console.log(`este é um geojson ${geo}`);
+  console.log({ ...geoJson});
+
+  useEffect(() => {
+    getAll();
+  },[getAll])
 
   
 

@@ -1,18 +1,20 @@
 import { useCallback, useState } from "react";
-import { IGeoJson } from "../interfaces";
+import { GeoJsonObject } from "geojson";
 import { GeoJSONServices } from "../services/GeoJSONServices";
 
-export const useGEoJSON = () => {
-  var [geoJson, setGeoJson] = useState({});
+export const useGeoJSON = () => {
+  const [geoJSON, setGeoJSON] = useState<GeoJsonObject>();
+
   const getAll = useCallback(async () => {
     const { status, data } = await GeoJSONServices.getAll();
-    console.log(status, data);
+
     if (status !== 200) throw new Error();
-    setGeoJson(data);
+
+    setGeoJSON(data);
   }, []);
 
   return {
-    geoJson,
+    geoJSON,
     getAll,
   };
 };
