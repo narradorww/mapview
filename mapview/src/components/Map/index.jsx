@@ -15,12 +15,11 @@ export default function Map() {
     getAll();
   }, [getAll]);
 
-  function onEachFeature(feature, layer) {
-    if (feature.properties && feature.properties.name) {
-        layer.bindPopup(feature.properties.name);
-        console.log(`ja sabemos como funfa ${feature.properties.uuid}`)
+  function onEachFeature(features, layer) {
+    
+    
     }
-}
+
 
 
 
@@ -33,7 +32,8 @@ export default function Map() {
         <TileLayer url={osm.url} attribution={osm.attribution} />
         <GeoJSON data={geo} onEachFeature={onEachFeature} eventHandlers={{
     click: () => {
-      console.log('marker clicked')
+      console.log('marker clicked');
+      onEachFeature()
     },
   }}/>
       </MapContainer>
