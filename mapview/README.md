@@ -83,19 +83,3 @@ If you're commited and want to achieve high marks, be mindful to:
 
 - Write tests for the component.
 
----
-
-## SUBMISSION
-
-After receiving access tho this repository, You'll have 3 days to submit your take home project.
-
-Any reference or snippet of code that's not owned by the submitter should be referenced and indexed. No plagiarism is accepted.
-
-To submit the project, create a git repository and provide us with the access link via email at marcos.medeiros@netlume.io. The subject of the email should be "Front-End Engineer Project Submission". Any notes or additional information that you find relevant is also welcome.
-
-### The 3 days deadline for this project starts once the email with access to this repository is send.
-
-
-Thanks for your time and energy,
-
-We're looking forward to your submission!
