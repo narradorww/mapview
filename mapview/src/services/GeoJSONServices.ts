@@ -2,7 +2,7 @@ import { GeoJsonObject } from "geojson";
 
 import { Api } from "./../providers/index";
 
-const getAll = () => Api.get<GeoJsonObject>('/mapview');
+const getAll = () => Api.get('/mapview');
 
 
 export const GeoJSONServices = {
