@@ -46,22 +46,6 @@ There are two project features for this take home project: Tree View and Map Vie
 
 **IMPORTANT: All submissions should be developed in React and Typescript.**
 
-### Tree view
-
-Given the nested `PhysicalComponent` object that you'll retrieve from the `/treeview` endpoint of this API, build an user interface in which all of the tree nodes are displayed in a tree-like structure.
-
-#### Requirements
-
-- You should use D3 and/or React D3 libraries to build the tree visualization.
-
-- The nodes should be connected by a line/link and the user should be able to see the parent/child connection type in a clear way.
-
-- Nodes should display data that easily identifies the class they belong to and their name.
-
-- User should be able to remove existing connections/nodes and also add new connections/nodes.
-
-- All data should be fetched from the API. No hard-coded data.
-
 
 ### Map view
 
