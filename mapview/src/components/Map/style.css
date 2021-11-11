@@ -5,8 +5,8 @@ body {
 }
 
 #map {
-  height: 80vh;
-  width: 80vw;
+  height: 640px;
+  width: 100%;
 }
 
 #root {

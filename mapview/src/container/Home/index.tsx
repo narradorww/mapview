@@ -1,20 +1,20 @@
 import React from "react";
 import Map from "../../components/Map";
-import { Container, Aside, StyledApp, Header } from "./style";
+import { Container, Logo, Header, Footer, ImgFooter } from "./style";
+import logo from "../../assets/img/logo.png";
 
 export default function Home() {
   return (
     <>
-      <Header>Logo NetLume</Header>
+      <Header>
+        <Logo src={logo} alt="logo NetLume" />
+      </Header>
       <Container>
-        <Aside>
-          <div> Control Panel </div>
-        </Aside>
-        <StyledApp>
-          <Map />
-          <p>Display</p>
-        </StyledApp>
+        <Map />
       </Container>
+      <Footer>
+        <ImgFooter src={logo} alt="logo" />
+      </Footer>
     </>
   );
 }
